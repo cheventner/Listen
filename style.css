@@ -6,9 +6,32 @@ body{
    font-family: 'JosefinSans', sans-serif;
    color: #3bc8e7;
 }
-nav{
+#connexion{
+    display: flex;
+    width: 100%;
     border: solid yellow;
     background-color : #1b2039;
+    flex-direction: column;
+    
+}
+#logo{
+    
+    background-image: url(./img/logo.png);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-self: center;
+    
+}
+#btnconnexion{
+
+   background-color: #3bc8e7; 
+   color: #ffffff;
+   height: 30px;
+   display: flex;
+   align-self: flex-end;
+  
+
 }
 #menu{
 border:solid green;
