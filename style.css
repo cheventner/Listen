@@ -1,43 +1,75 @@
 body{
-    border: solid red 2px;
+    /* border: solid red 2px; */
    background-color: #252b4d;
    width: 100%;
    height: 100%;
    font-family: 'JosefinSans', sans-serif;
    color: #3bc8e7;
+
 }
+/* header */
 #connexion{
     display: flex;
     width: 100%;
     border: solid yellow;
     background-color : #1b2039;
-    flex-direction: column;
-    
+   
 }
+/* .gridcontainer{
+   height: auto; 
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   grid-template-rows: min-content auto min-content;
+   background-color: #FFAFB0;
+} */
 #logo{
-    
     background-image: url(./img/logo.png);
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-self: center;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding-top: 2%;
+    
+   
     
 }
 #btnconnexion{
-
    background-color: #3bc8e7; 
    color: #ffffff;
    height: 30px;
-   display: flex;
-   align-self: flex-end;
-  
+   width: 100px;
+   text-align: center;
+   margin-right: 2%;
+   margin-top: 3%;
+}
 
+/* barre gauche  et conteneur central*/
+#container{
+    display:grid;
+    border:solid red;
+    grid-template-columns: [first]10% [line2] 40% [line3] 50%;
 }
 #menu{
 border:solid green;
+width: 10%;
+height: 800px;
 }
-
-
 #bloc1, #bloc2, #bloc3, #bloc4{
+   
+    display: grid; 
+   grid-template-columns:  40px 40px 40px 40px;
+   grid-gap: 10px ;
     border: solid purple;
+    width: 25%;
+    height: 150px;
+    align-items: flex-end;
 }
+#analyse{
+    border: solid greenyellow;
+    display: flex;
+}
+#bloc5, #bloc6{
+    border: solid burlywood;
+    width: 50%;
+}
+#graphique{
+    display: flex;
