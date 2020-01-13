@@ -133,11 +133,11 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
     height: 100vh;
  }
 
- .sidenav{
+  .sidenav{
      display: none;
      grid-area: sidenav;
      background-color: #394263;
- }
+ } 
  .main-cards {
     column-count: 1;
     column-gap: 20px;
@@ -145,7 +145,7 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
     }
     /* Styles non mobiles,, 750px breakpoint */
     @media only screen and (min-width: 46.875em) {
-        /* Show the sidenav */
+        /* Montrer le sidenav  */
         .grid-container {
         grid-template-columns: 240px 1fr; /* Afficher la navigation latérale pour les écrans non mobiles */
         grid-template-areas:
@@ -158,10 +158,66 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
         flex-direction: column;
         }
         }
-        /* Medium-sized screen breakpoint (tablet, 1050px) */
+        /* Point de rupture d'écran de taille moyenne (tablet, 1050px) */
         @media only screen and (min-width: 65.625em) {
-        /* Break out main cards into two columns */
+        /* Diviser les cartes principales en deux colonnes */
         .main-cards {
         column-count: 2;
         }
         } 
+
+        /* Icône menu Hamburger, reste fixe sur le mobile pour tout défilement possible */
+menu-icon {
+   position: fixed; display: flex;
+   top: 5px;
+   left: 10px;
+   align-items: center; justify-content: center; border-radius: 50%; z-index: 1;
+   cursor: pointer;
+   padding: 12px; 
+   background-color: #DADAE3;
+   }
+
+       /* Faites de la place pour l'icône du menu sur le mobile */ 
+.header__search {
+   margin-left: 42px;}
+
+   /* Styles de navigation mobile de côté */ 
+ 
+.sidenav {
+   grid-area: sidenav; 
+   display: flex; 
+   flex-direction: column; 
+   height: 100%;
+   width: 240px;
+   position: fixed;
+   overflow-y: auto;
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); 
+   z-index: 2; /* besoin de se positionner au-dessus de l'icône du menu hamburger */ 
+   background-color: #394263;
+   transform: translateX(-245px);
+   transition: all .6s ease-in-out;
+}
+/* La classe active est basculée sur hamburger et ferme les clics d'icône */ 
+.sidenav.active {
+    transform: translateX(0);
+}
+/* Visible uniquement sur les écrans mobiles */ 
+.sidenav__close-icon {
+    position: absolute; 
+    visibility: visible; 
+    top: 8px;
+    right: 12px; 
+    cursor: pointer; 
+    font-size: 20px;
+    color: #ddd;
+}
+/* Styles non mobiles pour la réactivité de la navigation latérale, 750px breakpoint */ 
+@media only screen and (min-width: 46.875em) {
+    .sidenav {
+        position: relative; /* Position fixe sur mobile */
+        transform: translateX(0);
+    }
+    .sidenav__close-icon { 
+        visibility: hidden;
+    }
+}
