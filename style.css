@@ -32,11 +32,11 @@ background-color:#648ca6;
 
 .main{
 grid-area: main;
-background-color: blueviolet;
+background-color: #252b4d;
 }
 .footer{
 grid-area: footer;
-background-color: crimson;
+background-color: #252b4d;
 }
 /* 
 Style et structure pour contenu nav sur le coté du tableau de bord */
@@ -113,3 +113,55 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
  .card:first-child{
      height: 485px;
  }
+ .card:nth-child(2){
+     height: 200px;
+ }
+ .card:nth-child(3){
+     height: 265px;
+ }
+
+ /* Tableau de bord format mobile */
+
+ .grid-container{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 50px 1fr 50px;
+     grid-template-areas: 
+        header
+        main
+        footer;
+    height: 100vh;
+ }
+
+ .sidenav{
+     display: none;
+     grid-area: sidenav;
+     background-color: #394263;
+ }
+ .main-cards {
+    column-count: 1;
+    column-gap: 20px;
+    margin: 20px;
+    }
+    /* Styles non mobiles,, 750px breakpoint */
+    @media only screen and (min-width: 46.875em) {
+        /* Show the sidenav */
+        .grid-container {
+        grid-template-columns: 240px 1fr; /* Afficher la navigation latérale pour les écrans non mobiles */
+        grid-template-areas:
+        "sidenav header"
+        "sidenav main"
+        "sidenav footer";
+        }
+        .sidenav {
+        display: flex;
+        flex-direction: column;
+        }
+        }
+        /* Medium-sized screen breakpoint (tablet, 1050px) */
+        @media only screen and (min-width: 65.625em) {
+        /* Break out main cards into two columns */
+        .main-cards {
+        column-count: 2;
+        }
+        } 
