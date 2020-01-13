@@ -4,41 +4,42 @@
     <meta charset="utf-8">
     <title>Listen</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <div class="gridcontainer">
-      <header>
-          <nav id="connexion"> 
-                <div id="logo"></div>
-                <button id ="btnconnexion"  onclick="">Connexion</button>
-              </nav>
+    <!-- container général -->
+<div class="grid-container">
+
+     <!-- Début Header -->
+      <header class="header">  
+        <div class="header_search">Recherche</div>  
+        <div class="header_avatar">Photo</div>  
       </header>
-      <div id ="container">
-          <nav id="menu">
-            <ul>
-              <li>Liste des Abonné</li>
-              <li>Ajouter Abonné</li>
-              <li>Albums</li>
-              <li>Artistes</li>
-              <li>Concerts</li>
-              <li>Playlist</li>
-            </ul>
-          </nav>  
-
-          <section id="analyse">
-            <div id ="bloc1">Bloc analyse 1</div>
-            <div id ="bloc2">Bloc analyse 2</div>
-            <div id ="bloc3">Bloc analyse 3</div>
-            <div id ="bloc4">bloc analyse 4</div>
-          </section>
-
-         <section id="graphique">
-          <div id="bloc5">bloc graphique 1</div>
-          <div id="bloc6">bloc graphique 2</div>
-        </section>
-      
+    <!-- Fin Header -->
+      <aside class="sidenav">
+          <ul>
+            <li class="sidenav_list-item">Liste des Abonné</li>
+            <li class="sidenav_list-item">Ajouter Abonné</li>
+            <li class="sidenav_list-item">Albums</li>
+            <li class="sidenav_list-item">Artistes</li>
+            <li class="sidenav_list-item">Concerts</li>
+            <li class="sidenav_list-item">Playlist</li>
+          </ul>
+      </aside>
+       <main class="main">
+<div class="main-header">
+<div class="main-header_heading">Hello User</div>
+<div class="main-header_updates">Recent Items</div>
+</div>
+       </main>    
+       <!-- Footer -->
+      <footer class ="footer">
+        <div class="footer_copyright">&copy; 2020 Valérie Cheventner</div>
+<div class="footer_signature">Listen Just For You</div>
+      </footer>
+      <!-- Fin Footer -->
       </div>
-    </div >  
+    </div>
   <script type="text/javascript" src="javascript.js"></script>
   </body>
 </html>

@@ -1,76 +1,77 @@
+/* Assigner des instructions de grille à notre conteneur de grille parent  */
+.grid-container{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+    "sidenav header"
+      "sidenav main"  
+      "sidenav footer" ;
+      height: 100vh;
+}
+
 body{
-    /* border: solid red 2px; */
-   background-color: #252b4d;
-   width: 100%;
-   height: 100%;
-   font-family: 'JosefinSans', sans-serif;
-   color: #3bc8e7;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* Créer les styles et la structure de nos éléments d'en-tête et de pied de page ; zone de grille déclarée
+précédemment */
+.header, .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: yellow;
+}
+/* Donnez à chaque élément enfant son nom de grille */
+.header{
+grid-area: header;
+background-color:#648ca6;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.main{
+grid-area: main;
+background-color: blueviolet;
+}
+.footer{
+grid-area: footer;
+background-color: crimson;
+}
+/* 
+Style et structure pour contenu nav sur le coté du tableau de bord */
 
-}
-/* header */
-#connexion{
-    display: flex;
-    width: 100%;
-    border: solid yellow;
-    background-color : #1b2039;
-   
-}
-/* .gridcontainer{
-   height: auto; 
-   display: grid;
-   grid-template-columns: 1fr 3fr;
-   grid-template-rows: min-content auto min-content;
-   background-color: #FFAFB0;
-} */
-#logo{
-    background-image: url(./img/logo.png);
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    padding-top: 2%;
+.sidenav {
+    display: flex; /* Will be hidden on mobile */
+    flex-direction: column;
     
+    background-color: #1b2039;
    
-    
-}
-#btnconnexion{
-   background-color: #3bc8e7; 
-   color: #ffffff;
-   height: 30px;
-   width: 100px;
-   text-align: center;
-   margin-right: 2%;
-   margin-top: 3%;
-}
-
-/* barre gauche  et conteneur central*/
-#container{
-    display:grid;
-    border:solid red;
-    grid-template-columns: [first]10% [line2] 40% [line3] 50%;
-}
-#menu{
-border:solid green;
-width: 10%;
-height: 800px;
-}
-#bloc1, #bloc2, #bloc3, #bloc4{
-   
-    display: grid; 
-   grid-template-columns:  40px 40px 40px 40px;
-   grid-gap: 10px ;
-    border: solid purple;
-    width: 25%;
-    height: 150px;
-    align-items: flex-end;
-}
-#analyse{
-    border: solid greenyellow;
-    display: flex;
-}
-#bloc5, #bloc6{
-    border: solid burlywood;
-    width: 50%;
-}
-#graphique{
-    display: flex;
-}
+  }
+  .sidenav_list {
+    padding: 0;
+    margin-top: 85px;
+    list-style-type: none;
+  }
+  .sidenav_list-item {
+    padding: 20px 20px 20px 40px;
+    color: #3bc8e7;
+    ;
+    image-resolution: 20px;
+  }
+  .sidenav_list-item:hover {
+    background-color:#252b4d;
+    cursor: pointer;
+  }
+  .sidenav #menu{
+      padding-top: 50px;
+  }
+  /*Le tout premier élément à l'intérieur du conteneur <main>parent*/
+  .main-header{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+      height: 150px;
+      background-color: #FFFFFF;
+      color: black;
+  }
