@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Listen</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet"> 
-  </head>
-  <body>
-    <!-- container général -->
-<div class="grid-container">
 
-     <!-- Début Header -->
-      <header class="header">  
-        <div class="header_search">Recherche</div>  
-        <div class="header_avatar">Photo</div>  
-      </header>
+<head>
+  <meta charset="utf-8">
+  <title>Listen</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- container général -->
+  <div class="grid-container">
+
+    <!-- Début Header -->
+    <header class="header">
+      <div class="header_search">Recherche</div>
+   
+      <button id ="btnconnexion"  onclick="">Connexion</button>
+      
+    </header>
     <!-- Fin Header -->
-      <aside class="sidenav">
-          <ul>
-            <li class="sidenav_list-item">Liste des Abonné</li>
-            <li class="sidenav_list-item">Ajouter Abonné</li>
-            <li class="sidenav_list-item">Albums</li>
-            <li class="sidenav_list-item">Artistes</li>
-            <li class="sidenav_list-item">Concerts</li>
-            <li class="sidenav_list-item">Playlist</li>
-          </ul>
-      </aside>
-       <main class="main">
-<div class="main-header">
-<div class="main-header_heading">Hello User</div>
-<div class="main-header_updates">Recent Items</div>
-</div>
-       </main>    
-       <!-- Footer -->
-      <footer class ="footer">
-        <div class="footer_copyright">&copy; 2020 Valérie Cheventner</div>
-<div class="footer_signature">Listen Just For You</div>
-      </footer>
-      <!-- Fin Footer -->
+    <aside class="sidenav">
+      <ul>
+        <li class="sidenav_list-item">Liste des Abonné</li>
+        <li class="sidenav_list-item">Ajouter Abonné</li>
+        <li class="sidenav_list-item">Albums</li>
+        <li class="sidenav_list-item">Artistes</li>
+        <li class="sidenav_list-item">Concerts</li>
+        <li class="sidenav_list-item">Playlist</li>
+      </ul>
+    </aside>
+    <main class="main">
+      <div class="main-header">
+        <div class="main-header_heading">Hello User</div>
+        <div class="main-header_updates">Recent Items</div>
       </div>
-    </div>
+
+      <!-- Section  ANALYSE -->
+      <div class="main-overview">
+        <div class="overwievcard">
+          <div class="overviewcard_icon">Overview</div>
+          <div class="overviewcard_info">Card</div>
+        </div>
+        <div class="overwievcard">
+          <div class="overviewcard_icon">Overview</div>
+          <div class="overviewcard_info">Card</div>
+        </div>
+        <div class="overwievcard">
+          <div class="overviewcard_icon">Overview</div>
+          <div class="overviewcard_info">Card</div>
+        </div>
+        <div class="overwievcard">
+          <div class="overviewcard_icon">Overview</div>
+          <div class="overviewcard_info">Card</div>
+        </div>
+
+      </div>
+      <!-- Fin de la section -->
+ 
+      <!-- Section GRAPHIQUE -->
+      <div class="main-cards">
+        <div class="card">Card</div>
+        <div class="card">Card</div>
+        <div class="card">Card</div>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer_copyright">&copy; 2020 Valérie Cheventner</div>
+      <div class="footer_signature">Listen Just For You</div>
+    </footer>
+    <!-- Fin Footer -->
+  </div>
+  </div>
   <script type="text/javascript" src="javascript.js"></script>
-  </body>
+</body>
+
 </html>
