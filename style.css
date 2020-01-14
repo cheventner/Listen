@@ -49,7 +49,7 @@ ul  {
 
 .main{
 grid-area: main;
-background-color: #252b4d;
+background-color: #ffffff;
 }
 .footer{
 grid-area: footer;
@@ -113,7 +113,24 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
     width: 300px;
     height: 180px;
 }
-
+#overview2{
+    background-image: url(./img/totalabn.PNG);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 180px;
+}
+#overview3{
+    background-image: url(./img/statecouteartiste.PNG);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 180px;
+}
+#overview4{
+    background-image: url(./img/statecoutealbum.PNG);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 180px;
+}
  /*Section  GRAPHIQUE*/
  .main-cards{
      
