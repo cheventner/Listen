@@ -20,12 +20,23 @@ précédemment */
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
-    background-color: yellow;
+    background-color: #1b2039;
 }
 /* Donnez à chaque élément enfant son nom de grille */
 .header{
 grid-area: header;
-background-color:#648ca6;
+background-color:#1b2039;
+}
+.menu_search{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
 }
 
     
@@ -122,16 +133,16 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
 
  /* Tableau de bord format mobile */
 
- .grid-container{
+ /* .grid-container{
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: 50px 1fr 50px;
      grid-template-areas: 
-        header
-        main
-        footer;
+        "header"
+        "main"
+        "footer";
     height: 100vh;
- }
+ } */
 
   .sidenav{
      display: none;
@@ -143,35 +154,38 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
     column-gap: 20px;
     margin: 20px;
     }
-    /* Styles non mobiles,, 750px breakpoint */
-    @media only screen and (min-width: 46.875em) {
-        /* Montrer le sidenav  */
-        .grid-container {
-        grid-template-columns: 240px 1fr; /* Afficher la navigation latérale pour les écrans non mobiles */
-        grid-template-areas:
-        "sidenav header"
-        "sidenav main"
-        "sidenav footer";
-        }
-        .sidenav {
+    /* Styles non mobiles, 750px breakpoint */
+@media only screen and (min-width: 46.875em) {
+    /* Montrer le sidenav  */
+    .grid-container {
+    grid-template-columns: 240px 1fr; /* Afficher la navigation latérale pour les écrans non mobiles */
+    grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+    }
+    .sidenav {
         display: flex;
         flex-direction: column;
-        }
-        }
-        /* Point de rupture d'écran de taille moyenne (tablet, 1050px) */
-        @media only screen and (min-width: 65.625em) {
-        /* Diviser les cartes principales en deux colonnes */
-        .main-cards {
-        column-count: 2;
-        }
-        } 
+    }
+}
+    /* Point de rupture d'écran de taille moyenne (tablet, 1050px) */
+@media only screen and (min-width: 65.625em) {
+    /* Diviser les cartes principales en deux colonnes */
+    .main-cards {
+    column-count: 2;
+    }
+} 
 
-        /* Icône menu Hamburger, reste fixe sur le mobile pour tout défilement possible */
+    /* Icône menu Hamburger, reste fixe sur le mobile pour tout défilement possible */
 menu-icon {
    position: fixed; display: flex;
    top: 5px;
    left: 10px;
-   align-items: center; justify-content: center; border-radius: 50%; z-index: 1;
+   align-items: center; 
+   justify-content: center; 
+   border-radius: 50%; 
+   z-index: 1;
    cursor: pointer;
    padding: 12px; 
    background-color: #DADAE3;
@@ -221,3 +235,7 @@ menu-icon {
         visibility: hidden;
     }
 }
+/* style pour icone */
+i.fas.fa-bars{
+    color: #3bc8e7;
+ }

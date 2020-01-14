@@ -5,30 +5,46 @@
   <meta charset="utf-8">
   <title>Listen</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- chargement bibliothèque jquery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- chargement Police de caractère -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
+  <!-- chargement Icones à partir de mon profil fontawesome -->
+  <script src="https://kit.fontawesome.com/38c3cc866a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- container général -->
+  <!-- Début container général -->
   <i class="grid-container">
-    <div class="menu-icon">
-      <i class="fas fa-bars"></i>
-      </div>
+
     <!-- Début Header -->
     <header class="header">
-      <div class="header_search">Recherche</div>
-   
-      <button id ="btnconnexion"  onclick="">Connexion</button>
+      <div class="menu_search">
+        <!-- div pour mettre à gauche le menu hamburger et l'imput recherche -->
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Recherche -->
+        <div class="header__search">
+          <input class="header__input" placeholder="Recherche..." />
+        </div>
+      </div>
+
+
+      <!--Bouton connexion  -->
+        <button id="btnconnexion" onclick="">Connexion</button>
       
     </header>
     <!-- Fin Header -->
     <aside class="sidenav">
       <div class="sidenav__close-icon">
-        <i class="fas fa-times"></i> 
+        <i class="fas fa-times"></i>
       </div>
+      <div class="logo"></div>
       <ul>
         <li class="sidenav_list-item">Liste des Abonné</li>
-        
+
         <li class="sidenav_list-item">Ajouter Abonné</li>
         <li class="sidenav_list-item">Albums</li>
         <li class="sidenav_list-item">Artistes</li>
@@ -63,15 +79,15 @@
 
       </div>
       <!-- Fin de la section -->
- 
+
       <!-- Section GRAPHIQUE -->
       <div class="main-cards">
         <div class="card">Card</div>
         <div class="card">Card</div>
         <div class="card">Card</div>
-        </div>
+      </div>
 
-      
+
     </main>
 
 
@@ -81,9 +97,9 @@
       <div class="footer_signature">Listen Just For You</div>
     </footer>
     <!-- Fin Footer -->
-  </div>
-  </div>
-  <script type="text/javascript" src="javascript.js"></script>
+    </div>
+    </div>
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
 
 </html>
