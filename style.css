@@ -1,3 +1,4 @@
+
 /* Assigner des instructions de grille à notre conteneur de grille parent  */
 .grid-container{
     display: grid;
@@ -105,27 +106,27 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
      align-items: center;
      justify-content: space-between;
      padding: 20px;
-     background-color: #d3d3;
+     background-color: #ffffff;
  }
 #overview1{
     background-image: url(./img/totalvte.PNG);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 #overview2{
     background-image: url(./img/totalabn.PNG);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 #overview3{
     background-image: url(./img/statecouteartiste.PNG);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 #overview4{
     background-image: url(./img/statecoutealbum.PNG);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
  /*Section  GRAPHIQUE*/
  .main-cards-1a2{
@@ -137,6 +138,7 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
      display: flex;
      flex-direction: column;
      align-items: center;
+     justify-content: space-between;
      width: 100%;
      background-color: #82bef6;
      margin-bottom: 20px;
@@ -149,12 +151,12 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
  #card1{
     background-image: url(./img/graphjour.PNG);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: contain; 
  }
  #card2{
     background-image: url(./img/graphanalyse.PNG);
     background-repeat: no-repeat;
-    background-size: 50%; 
+    background-size: contain; 
  }
  /* Forcer les hauteurs variables pour simuler un contenu dynamique */
  .card:first-child{
@@ -163,17 +165,24 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
  .card:nth-child(2){
      height: 200px;
  }
-
+ .card3:first-child{
+    border: deeppink solid;
+    height: 300px;
+}
+.card3:nth-child(2){
+    border: forestgreen solid;
+    height: 200px;
+}
  /* suppression de la card3 
   .card:nth-child(3){
      height: 265px;
  } */
 
 .card2:first-child{
-     height: 200px;
+    height: 400px;
  }
- .card2:nth-child(2){
-     height: 200px;
+ .card2:nth-child(2){ 
+    height: 400px;
  }
 
 
@@ -293,7 +302,3 @@ menu-icon {
         visibility: hidden;
     }
 }
-/* style pour icone */
-i.fas.fa-bars{
-    color: #3bc8e7;
- }
