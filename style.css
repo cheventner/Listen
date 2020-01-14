@@ -31,12 +31,16 @@ background-color:#1b2039;
     display: flex;
     justify-content: center;
 }
-
+.logo_btn{
+    display: flex;
+    justify-content: center; 
+}
 .logo{
     background-image: url(./img/logo.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 100px;
+
 }
 
     
@@ -52,13 +56,13 @@ background-color: #252b4d;
 /* 
 Style et structure pour contenu nav sur le coté du tableau de bord */
 
-.sidenav {
-    display: flex; /* Will be hidden on mobile */
+/* .sidenav {
+    display: flex; /* Sera caché sur le mobile 
     flex-direction: column;
     grid-area: sidenav;
     background-color: #1b2039;
-   
-  }
+  } */
+
   .sidenav_list {
     padding: 0;
     margin-top: 85px;
@@ -133,7 +137,7 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
 
  /* Tableau de bord format mobile */
 
- /* .grid-container{
+ .grid-container{
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: 50px 1fr 50px;
@@ -142,13 +146,13 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
         "main"
         "footer";
     height: 100vh;
- } */
+ }
 
-  .sidenav{
+  /* .sidenav{
      display: none;
      grid-area: sidenav;
      background-color: #394263;
- } 
+ }  */
  .main-cards {
     column-count: 1;
     column-gap: 20px;
@@ -191,7 +195,7 @@ menu-icon {
    background-color: #DADAE3;
    }
 
-       /* Faites de la place pour l'icône du menu sur le mobile */ 
+       /* Faire de la place pour l'icône du menu sur le mobile */ 
 .header__search {
    margin-left: 42px;}
 
@@ -199,7 +203,7 @@ menu-icon {
  
 .sidenav {
    grid-area: sidenav; 
-   display: flex; 
+   display: flex; /* Sera caché sur le mobile */
    flex-direction: column; 
    height: 100%;
    width: 240px;
@@ -207,10 +211,12 @@ menu-icon {
    overflow-y: auto;
    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); 
    z-index: 2; /* besoin de se positionner au-dessus de l'icône du menu hamburger */ 
-   background-color: #394263;
+   background-color: #1b2039;
    transform: translateX(-245px);
    transition: all .6s ease-in-out;
 }
+
+
 /* La classe active est basculée sur hamburger et ferme les clics d'icône */ 
 .sidenav.active {
     transform: translateX(0);
