@@ -40,10 +40,12 @@ background-color:#1b2039;
     background-repeat: no-repeat;
     background-position: center;
     height: 100px;
-
 }
 
-    
+/* suppression du point de la liste à puce */
+ul  {
+    list-style: none;
+}
 
 .main{
 grid-area: main;
@@ -69,7 +71,7 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
     list-style-type: none;
   }
   .sidenav_list-item {
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 10px;
     color: #3bc8e7;
     
   }
@@ -94,7 +96,7 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
   .main-overview{
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(265px,1fr));/*Où la magie se produit  */
-    grid-auto-rows: 94px;
+    grid-auto-rows: 210px;
     grid-gap: 20px;
     margin: 20px;
  }
@@ -105,6 +107,13 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
      padding: 20px;
      background-color: #d3d3;
  }
+#overview1{
+    background-image: url(./img/totalvte.PNG);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 180px;
+}
+
  /*Section  GRAPHIQUE*/
  .main-cards{
      
@@ -124,16 +133,27 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
      box-sizing: border-box;
 
  }
- /* Forcer les hauteurs variables pour simuler un conenu dynamique */
+ /* Forcer les hauteurs variables pour simuler un contenu dynamique */
  .card:first-child{
-     height: 485px;
+     height: 200px;
  }
  .card:nth-child(2){
      height: 200px;
  }
- .card:nth-child(3){
+
+ /* suppression de la card3 
+  .card:nth-child(3){
      height: 265px;
+ } */
+
+.card2:first-child{
+     height: 200px;
  }
+ .card2:nth-child(2){
+     height: 200px;
+ }
+
+
 
  /* Tableau de bord format mobile */
 
