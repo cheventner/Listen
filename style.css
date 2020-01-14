@@ -110,31 +110,26 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
 #overview1{
     background-image: url(./img/totalvte.PNG);
     background-repeat: no-repeat;
-    width: 300px;
-    height: 180px;
+    background-size: cover;
 }
 #overview2{
     background-image: url(./img/totalabn.PNG);
     background-repeat: no-repeat;
-    width: 300px;
-    height: 180px;
+    background-size: cover;
 }
 #overview3{
     background-image: url(./img/statecouteartiste.PNG);
     background-repeat: no-repeat;
-    width: 300px;
-    height: 180px;
+    background-size: cover;
 }
 #overview4{
     background-image: url(./img/statecoutealbum.PNG);
     background-repeat: no-repeat;
-    width: 300px;
-    height: 180px;
+    background-size: cover;
 }
  /*Section  GRAPHIQUE*/
- .main-cards{
-     
-     column-count: 2;
+ .main-cards-1a2{
+    column-count: 2;
      column-gap: 20px;
      margin: 20px;
  }
@@ -149,6 +144,17 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
      padding: 24px;
      box-sizing: border-box;
 
+ }
+
+ #card1{
+    background-image: url(./img/graphjour.PNG);
+    background-repeat: no-repeat;
+    background-size: cover; 
+ }
+ #card2{
+    background-image: url(./img/graphanalyse.PNG);
+    background-repeat: no-repeat;
+    background-size: 50%; 
  }
  /* Forcer les hauteurs variables pour simuler un contenu dynamique */
  .card:first-child{
@@ -190,11 +196,14 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
      grid-area: sidenav;
      background-color: #394263;
  }  */
- .main-cards {
+
+ /* A conserver sinon le site ne va pas jusqu'au bas de la page */
+ .main-cards-1a2 {
     column-count: 1;
     column-gap: 20px;
     margin: 20px;
-    }
+    } 
+
     /* Styles non mobiles, 750px breakpoint */
 @media only screen and (min-width: 46.875em) {
     /* Montrer le sidenav  */
@@ -213,7 +222,13 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
     /* Point de rupture d'écran de taille moyenne (tablet, 1050px) */
 @media only screen and (min-width: 65.625em) {
     /* Diviser les cartes principales en deux colonnes */
-    .main-cards {
+    .main-cards-1a2{
+    column-count: 2;
+    }
+} 
+@media only screen and (min-width: 65.625em) {
+    /* Diviser les cartes principales en deux colonnes */
+    .main-cards-3a4{
     column-count: 2;
     }
 } 
