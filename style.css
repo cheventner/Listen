@@ -83,6 +83,21 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
   .sidenav #menu{
       padding-top: 50px;
   }
+
+  /* sidenav sous-menu */
+
+.sidenav ul ul{
+    border: aqua solid;
+    padding: 0;
+}
+.sidenav ul ul li{
+    padding: 15px;
+    position: relative;
+}
+.sidenav ul ul li a:hover{
+    border: springgreen solid;
+    background-color: tomato;
+}
   /*Le tout premier élément à l'intérieur du conteneur <main>parent*/
   .main-header{
       display: flex;
