@@ -87,7 +87,6 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
   /* sidenav sous-menu */
 
 .sidenav ul ul{
-    border: aqua solid;
     padding: 0;
 }
 .sidenav ul ul li{
@@ -95,7 +94,6 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
     position: relative;
 }
 .sidenav ul ul li a:hover{
-    border: springgreen solid;
     background-color: white;
 }
 a{
