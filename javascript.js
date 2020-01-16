@@ -22,17 +22,31 @@ const menuIconEl = $('.menu-icon');
     });
 
 //  clique sur bouton connexion
-function affichediv() {
-    var div = document.getElementById("main-screenconnex");
-    if (onclick === "true") {
-      div.style.display = "block";
-    } else {
-      div.style.display = "none";
+// recuperer l'id de la fenetre de connexion (screenconnex)
+var ecran = document.getElementById("screenconnex");
+// recuperer le bouton qui ouvre la fenetre de connexion 
+var btn = document.getElementById("btnconnexion");
+// récupération du span qui ferme l'écran
+var span = document.getElementsByClassName("close")[0];
+// quand l'utilisateur clique sur le bouton, ouverture de l'écran
+btn.onclick = function(){
+    ecran.style.display = "block";
+}
+// quand l'utilisateur clique sur span (x), fermeture fenetre
+span.onclick = function(){
+    ecran.style.display = "none";
+}
+// quand l'utilisateur clique n'importe ou en dehors de la fenetre
+window.onclick = function(event){
+    if(event.target == screen){
+        ecran.style.display = "none";
     }
-  }
-
-
-    // Import données
+}
+    console.log(ecran)
+    console.log(btn)
+    console.log(span)
+    console.log(btn.onclick)
+// Import données
 
     //Obtenir donnée du lien API
 async function donneeAlbum() {
