@@ -98,6 +98,7 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
 }
 a{
     color: #3bc8e7;
+    text-decoration: none;
 }
 .sidenav ul li ul li{
     display: none;
