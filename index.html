@@ -91,15 +91,18 @@
     <main class="main">
 
       <!-- section de l'ouverture de la div, lors du clic sur connexion -->
-      <div id="screenconnex" class="screen" >
+      <form  id="screenconnex" class="screen" >
         <div class= "contenu-screenconnex">
         <span class="close">&times;</span> 
-        <input type="text" name="Nom" placeholder="Nom">
-        <input type="text" name="Prénom" placeholder="Prénom">
-        <input type="text" name="Email" placeholder="Email">
-        <input type="password" name="Mot de passe" placeholder="Mot de passe">
-        </div>
-       </div>
+        <input type="text" name="Login" placeholder="Nom" required>
+        <input type="password" name="Mot de passe" placeholder="Mot de passe" required>
+        <button id="login" type="submit">Login</button>
+      </div>
+       <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+    </form>
       <!-- Fin de la section -->
 
       <!-- Section  ANALYSE -->

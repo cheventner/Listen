@@ -42,6 +42,8 @@ window.onclick = function(event){
         ecran.style.display = "none";
     }
 }
+
+
     console.log(ecran)
     console.log(btn)
     console.log(span)

@@ -33,19 +33,20 @@ background-color:#1b2039;
     justify-content: center;
 }
 .logo_btn{
+    margin-top: 10px;
     display: flex;
     justify-content: center; 
 }
 
 /* Fenetre connexion */
 .screen{
-    border: olive solid;
     position: fixed;
     /* se mets sur le dessus */
     z-index: 1; 
     display: none;
-    width: 50%;
     height: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
     overflow: auto;
     background: linear-gradient(40deg, #408696, #6DD7EE);
 }
@@ -55,6 +56,17 @@ background-color:#1b2039;
     padding: 20px;
     border:1px solid #888;
     width: 80%;
+}
+input[type=text], input[type=password]{
+    width: 80%;
+    display: inline-block;
+}
+#login{
+    padding: 10px;
+    display: flex;
+   margin-top: 20px;
+   margin-left: 50px;
+   background-color: #3bc8e7;
 }
 .close{
     color: #aaa;
