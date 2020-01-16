@@ -38,13 +38,16 @@ background-color:#1b2039;
 }
 .screen{
     border: olive solid;
-    width: 400px;
     position: fixed;
     /* se mets sur le dessus */
     z-index: 1; 
-    height: 400px;
     display: none;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    background: linear-gradient(40deg, #408696, #6DD7EE);
 }
+
 .logo{
     background-image: url(./img/logo.png);
     background-repeat: no-repeat;
