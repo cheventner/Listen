@@ -99,8 +99,15 @@ Style et structure pour contenu nav sur le coté du tableau de bord */
     background-color: white;
 }
 a{
-    color: #3bc8e7;;
+    color: #3bc8e7;
 }
+.sidenav ul li ul li{
+    display: none;
+}
+.sidenav ul li:hover ul li{
+    display: block;
+}
+
   /*Le tout premier élément à l'intérieur du conteneur <main>parent*/
   .main-header{
       display: flex;
