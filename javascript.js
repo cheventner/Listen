@@ -21,8 +21,15 @@ const menuIconEl = $('.menu-icon');
       toggleClassName(sidenavEl, 'active');
     });
 
- 
-
+//  clique sur bouton connexion
+function affichediv() {
+    var div = document.getElementById("main-screenconnex");
+    if (onclick === "true") {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+  }
 
 
     // Import données

@@ -36,6 +36,15 @@ background-color:#1b2039;
     display: flex;
     justify-content: center; 
 }
+.screen{
+    border: olive solid;
+    width: 400px;
+    position: fixed;
+    /* se mets sur le dessus */
+    z-index: 1; 
+    height: 400px;
+    display: none;
+}
 .logo{
     background-image: url(./img/logo.png);
     background-repeat: no-repeat;
