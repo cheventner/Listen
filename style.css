@@ -176,18 +176,40 @@ a{
   }
 
  /* Section artiste et abonnés */
+
 .main-cards-3a4{
-    display: grid;
+     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));/*Où la magie se produit  */
     grid-auto-rows: 500px;
-    grid-gap: 20px;
+    grid-gap: 20px; 
     margin: 20px;
 }
 #card3{
-    background-image: url(./img/blocartiste.PNG);
-    background-repeat: no-repeat;
-
+   height: 40px;
  }
+ h1{
+    background-color: #1b2039;
+    height: 60px;
+    padding-left: 15px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.3em;
+}
+table{
+    width: 100%;
+    color: #3bc8e7;
+}
+.titre{
+    font-size: 1.4em;
+}
+td{
+height: 60px;
+}
+.photo_artiste img{
+    width: 50px;
+}
 #card4{
     background-image: url(./img/blocabonné.PNG);
     background-repeat: no-repeat;
